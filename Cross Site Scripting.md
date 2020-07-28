@@ -1,4 +1,4 @@
-#Cross Site Scripting
+# Cross Site Scripting
 
 Sending unvalidated data to a web browser may result in certain browsers executing malicious code.
 
@@ -6,7 +6,7 @@ Cross-site scripting (XSS) vulnerabilities occur when:
 1. Data enters a web application through an untrusted source. In the case of reflected XSS, the untrusted source is typically a web request, while in the case of persisted (also known as stored) XSS it is typically a database or other back-end data store.
 2. The data is included in dynamic content that is sent to a web user without being validated.
 
-*Servlet:*
+**Servlet:**
 Vulnerable:
 ```java
 protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
@@ -27,7 +27,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
 }
 ```
 
-*JSP:*
+**JSP:**
 Vulnerable:
 ```java
 <html>
