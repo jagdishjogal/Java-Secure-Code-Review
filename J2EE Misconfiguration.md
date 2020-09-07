@@ -10,11 +10,11 @@ A security constraint that does not specify a user data constraint cannot guaran
 
 web.xml security constraints are typically used for role based access control, but the optional user-data-constraint element specifies a transport guarantee that prevents content from being transmitted insecurely.
 
-Within the <user-data-constraint> tag, the <transport-guarantee> tag defines how communication should be handled. There are three levels of transport guarantee:
+Within the ```<user-data-constraint>``` tag, the ```<transport-guarantee>``` tag defines how communication should be handled. There are three levels of transport guarantee:
 
-1) NONE means that the application does not require any transport guarantees.
-2) INTEGRAL means that the application requires that data sent between the client and server be sent in such a way that it cannot be changed in transit.
-3) CONFIDENTIAL means that the application requires that data be transmitted in a fashion that prevents other entities from observing the contents of the transmission.
+1) ```NONE``` means that the application does not require any transport guarantees.
+2) ```INTEGRAL``` means that the application requires that data sent between the client and server be sent in such a way that it cannot be changed in transit.
+3) ```CONFIDENTIAL``` means that the application requires that data be transmitted in a fashion that prevents other entities from observing the contents of the transmission.
 
 In most circumstances, the use of INTEGRAL or CONFIDENTIAL means that SSL/TLS is required. If the <user-data-constraint> and <transport-guarantee> tags are omitted, the transport guarantee defaults to NONE.
 
