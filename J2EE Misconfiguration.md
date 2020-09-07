@@ -1,9 +1,13 @@
-#J2EE Misconfiguration
+# J2EE Misconfiguration
 
-##Missing Data Transport Constraint
-###Abstract
+## Missing Data Transport Constraint
+
+### Abstract
+
 A security constraint that does not specify a user data constraint cannot guarantee that restricted resources will be protected at the transport layer.
-###Explanation
+
+### Explanation
+
 web.xml security constraints are typically used for role based access control, but the optional user-data-constraint element specifies a transport guarantee that prevents content from being transmitted insecurely.
 
 Within the <user-data-constraint> tag, the <transport-guarantee> tag defines how communication should be handled. There are three levels of transport guarantee:
