@@ -1,5 +1,5 @@
-# Session Puzzling: Spring
-
+# Session Related vulnerabilities
+## Session Puzzling: Spring
 ### Abstract
 Attackers may modify Spring session attributes which may lead to application logic abuse.
 ### Explanation
